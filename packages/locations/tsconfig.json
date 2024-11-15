@@ -1,0 +1,10 @@
+{
+  "extends": "@prpr/ts-config/js-lib.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*", "src/**/*.json"],
+  "exclude": ["node_modules", "dist"]
+}

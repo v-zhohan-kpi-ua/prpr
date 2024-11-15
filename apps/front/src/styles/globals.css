@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  a.link {
+    @apply font-medium rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-accent focus-visible:text-accent-foreground focus-visible:outline-ring text-primary;
+  }
+
+  a.link-underline {
+    @apply font-medium rounded-sm focus-visible:outline-2 underline focus-visible:outline-offset-4 underline-offset-2 focus-visible:outline-ring text-primary;
+  }
+}

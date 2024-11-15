@@ -1,0 +1,33 @@
+{
+  "name": "@prpr/documents",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./properties": {
+      "types": "./dist/properties/index.d.ts",
+      "default": "./dist/properties/index.js"
+    },
+    "./number": {
+      "types": "./dist/number/index.d.ts",
+      "default": "./dist/number/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "build": "rimraf ./dist && tsc"
+  },
+  "devDependencies": {
+    "@prpr/ts-config": "workspace:*",
+    "@types/node": "^20.14.10",
+    "nodemon": "^3.1.4",
+    "rimraf": "^6.0.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "nanoid": "^3.3.7"
+  }
+}

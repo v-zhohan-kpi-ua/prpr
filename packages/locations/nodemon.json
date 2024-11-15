@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json.schemastore.org/nodemon.json",
+  "watch": ["src"],
+  "ignore": ["src/**/*.test.ts", "src/**/*.test.js"],
+  "ext": ".ts,.js,.json,.env",
+  "exec": "pnpms build"
+}

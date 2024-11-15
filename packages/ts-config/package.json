@@ -1,0 +1,12 @@
+{
+  "name": "@prpr/ts-config",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "base.json",
+    "js-lib.json",
+    "nest.json",
+    "next.json",
+    "react-lib.json"
+  ]
+}

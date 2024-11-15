@@ -1,0 +1,11 @@
+{
+  "extends": "@prpr/ts-config/react-lib.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@prpr/ui/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,7 @@
+{
+    "extends": "@prpr/ts-config/js-lib.json",
+    "compilerOptions": {
+       "outDir": "dist",
+    },
+    "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
+}

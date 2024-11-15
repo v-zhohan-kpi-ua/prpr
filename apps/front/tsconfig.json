@@ -1,0 +1,10 @@
+{
+  "extends": "@prpr/ts-config/next.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "../../packages/ui/src/components/calendar.tsx", "../../packages/ui/src/components/date-picker.tsx"],
+  "exclude": ["node_modules"]
+}

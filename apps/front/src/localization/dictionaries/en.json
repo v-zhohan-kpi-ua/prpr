@@ -1,0 +1,673 @@
+{
+  "common": {
+    "app": {
+      "name": {
+        "long": "Public Registry of Property Restoration",
+        "short": "PRPR"
+      }
+    },
+    "errors": {
+      "default": "Something went wrong",
+      "notFound": "Page not found",
+      "tryAgain": "Try again"
+    },
+    "accessability": {
+      "go-to-main-content": "Skip to main content"
+    },
+    "header": {
+      "beta": "Beta",
+      "changeLang": "Change language",
+      "langs": {
+        "uk": "Українська",
+        "en": "English"
+      },
+      "changeTheme": "Change theme",
+      "lightTheme": "Light",
+      "darkTheme": "Dark",
+      "systemTheme": "System"
+    },
+    "footer": {
+      "privacy": "Privacy",
+      "accessabilityStatement": "Accessability statement",
+      "allRightsReserved": "All Rights Reserved",
+      "propertyOf": "Property of the People of Planet of Wars and Destruction"
+    },
+    "toast": {
+      "sectionLabel": "Notifications"
+    },
+    "components": {
+      "file-uploader": {
+        "dropHereOrClick": "Drop files here <br></br> or <br></br> Click to select files to upload",
+        "dropHereIsActive": "Drop here",
+        "youCanUploadOnlyTypes": "You can upload {types, select, none {any files} other {only files of type: {types}}}",
+        "maxFileSize": "Maximum file size: {maxSize, select, infinity {no limit} other {{maxSize}}}",
+        "youCanUploadNMoreFiles": "You can upload {n, plural, one {# file} many {# files} other {# files}}",
+        "icons": {
+          "remove": "Remove file",
+          "view": "View file"
+        },
+        "removeAll": "Remove all files",
+        "errors": {
+          "maxFileSize": "The file is too large. The maximum file size is {maxSize}",
+          "fileType": "Invalid file type: {fileType}",
+          "maxFiles": "Max files count is {maxFiles}. Delete some files to load new ones",
+          "maxFilesWithZip": "Max files count is {maxFiles}. Delete some files or use ZIP archive to put them there"
+        }
+      },
+      "combobox": {
+        "placeholder": "Start typing...",
+        "noOptions": "There are no options matching your request",
+        "loading": "Loading, working on it...",
+        "errors": {
+          "general": "Something went wrong"
+        }
+      }
+    },
+    "documents": {
+      "f0": {
+        "form": {
+          "personal": {
+            "header": {
+              "title": "Personal Information"
+            },
+            "title": "Title",
+            "names": "Surnames, given names (including patronymic or middle names)",
+            "namesUk": "In Ukrainian",
+            "namesEn": "In Latin",
+            "dob": "Date of Birth",
+            "legalAddress": "Mailing Address",
+            "phone": "Phone",
+            "email": "Email",
+            "contactSelected": "selected communication method"
+          },
+          "property": {
+            "header": {
+              "title": "Damaged Property Information"
+            },
+            "address": "Address",
+            "building": "building",
+            "apartment": "apart.",
+            "selfAssessment": "Self-assessment of the damaged property",
+            "descriptionOfDamage": "Description of damage",
+            "physicalDamage": "Physical damage (0 - no damage, 5 - very damaged)",
+            "safety": "Safety level (✓ if yes)",
+            "livingConditions": "Living conditions and repairability (0 - not suitable, 5 - very suitable)",
+            "future": "Questions about your views on your future (including the future of the property in application)",
+            "formula": "Calculation results by formula",
+            "result": "Result",
+            "resultRoundedDescription": {
+              "label": "Result description",
+              "values": {
+                "0": "No damage",
+                "1": "Minor damage that does not affect habitability",
+                "2": "Moderate damage that requires repair but does not make the building uninhabitable",
+                "3": "Significant damage that makes the building partially uninhabitable",
+                "4": "Severe damage that makes the building uninhabitable but repairable",
+                "5": "Total destruction. The property is beyond repair"
+              }
+            },
+            "howItWasCalculated": "How it was calculated"
+          },
+          "docs": {
+            "header": {
+              "title": "Submitting Documents"
+            },
+            "id": "Identification documents",
+            "propertyId": "Property documents",
+            "evidenceOfDamagedProperty": "Evidence of destroyed property",
+            "location": "Location in the file system",
+            "description": "Description (in Ukrainian)",
+            "urlNotAvailable": "Link to the document is not available"
+          },
+          "alertHiddenInfo": {
+            "title": "Some data may be hidden",
+            "description": "Some data is hidden (e.g. personal data) <br></br> We are working to ensure that data owners can see it without restrictions"
+          }
+        },
+        "title": "Application for entry into the register",
+        "statusInfoCard": {
+          "title": "Application Status",
+          "description": "Last status update",
+          "status": {
+            "label": "Status",
+            "value": {
+              "submitted": "Registered, being processed",
+              "approved": "Approved, case opened",
+              "rejected": "Rejected"
+            }
+          },
+          "statusComment": "Status comment",
+          "deadline": "Must be completed by (including)",
+          "deadlinePassed": "Deadline passed",
+          "infoAboutExecutor": "Information about the executor",
+          "executor": {
+            "who": "Who is executing",
+            "howToContact": "How to contact",
+            "physicalLocation": "Where located"
+          }
+        },
+        "caseOpenedCard": {
+          "title": "A case for compensation has been opened",
+          "caseNumber": "Case number"
+        }
+      },
+      "c0": {
+        "title": "Case",
+        "infoFromF0Card": {
+          "title": "Information from the application"
+        },
+        "statusChangeCard": {
+          "title": "Case status change",
+          "statusValues": {
+            "opened": "Case opened",
+            "unknown": "Unknown status"
+          }
+        },
+        "advisorInfoCard": {
+          "title": "Advisor (counsellor) information regarding the case",
+          "advisor": {
+            "who": "Who",
+            "howToContact": "How to contact",
+            "location": "Location"
+          }
+        }
+      }
+    }
+  },
+  "pages": {
+    "index": {
+      "cardsCallToAction": {
+        "cardStartApplication": {
+          "title": "Apply entry into the registry",
+          "description": "We will help you register the damaged property",
+          "actionButton": "Apply"
+        },
+        "cardFindApplication": {
+          "title": "Already submitted an application?",
+          "description": "Enter your application, case, or document number so we can find them",
+          "form": {
+            "docNumber": "Application, case, or document number",
+            "submitButton": "Search for application, case, or document",
+            "docNumberEmpty": "Document number is missing. You need to enter the document number",
+            "docNumberIncorrect": "Incorrect document format. The document number should be in the format \"XX/XXXX/XXXXXXX\""
+          }
+        }
+      }
+    },
+    "apply": {
+      "title": "Apply entry into the registry",
+      "description": "Let's start your application",
+      "button-start": "Start"
+    },
+    "apply-form": {
+      "title": "Application for entry into the register",
+      "draftExpired": "The draft has expired",
+      "draft": "Draft",
+      "will-expire": "Will expire",
+      "step-n-of-nth": "Step {current} of {total}: {stepName}",
+      "info": {
+        "alert": {
+          "title": "Your application <important>will be saved automatically</important> as a draft",
+          "description": "You will be able to complete it later (for example, upload documents that are currently missing) <important>within seven (7) days</important> by returning to this page <br></br> The draft is not sent to the server and is stored only on your device!",
+          "formConsistOf": "The form consists of {numberOfSteps} steps",
+          "nextButton": "Next"
+        }
+      },
+      "restart-form": "Restart form",
+      "steps": {
+        "personal": {
+          "title": "Personal Information",
+          "form": {
+            "fields": {
+              "title": {
+                "label": "Title",
+                "placeholder": "Select title",
+                "options": {
+                  "mr": "Mr",
+                  "ms": "Ms",
+                  "none": "Do not use title"
+                },
+                "errors": {
+                  "required": "This field is required"
+                }
+              },
+              "givenName": {
+                "label": {
+                  "uk": "Given names (Ukrainian)",
+                  "en": "Given names (Latin)"
+                },
+                "placeholder": {
+                  "uk": "Іан Коннор",
+                  "en": "Ian Connor"
+                },
+                "description": "Enter all given names (including patronymics or middle names), separated by a space, as they appear in the documents",
+                "errors": {
+                  "required": "This field is required"
+                }
+              },
+              "surname": {
+                "label": {
+                  "uk": "Surnames or Family names (Ukrainian)",
+                  "en": "Surnames or Family names (Latin)"
+                },
+                "placeholder": {
+                  "uk": "Мартінез",
+                  "en": "Martinez"
+                },
+                "description": "Enter all surnames, separated by a space or dash, that appear in the documents",
+                "errors": {
+                  "required": "This field is required"
+                }
+              },
+              "dob": {
+                "label": "Date of birth",
+                "placeholder": "Select a date of birth",
+                "errors": {
+                  "required": "This field is required"
+                }
+              },
+              "contact": {
+                "phone": {
+                  "label": "Phone",
+                  "placeholder": "Enter phone number",
+                  "errors": {
+                    "required": "This field is required"
+                  }
+                },
+                "email": {
+                  "label": "Email",
+                  "placeholder": "ic.martinez@example.com",
+                  "errors": {
+                    "required": "This field is required",
+                    "invalid": "Enter a valid email"
+                  }
+                },
+                "preferableContactMethod": {
+                  "label": "A convenient way to communicate",
+                  "placeholder": "Choose a communication method",
+                  "description": "If you choose \"Email\", we may in some exceptional cases (e.g. operational, technical errors or if you do not answer on a regular basis to your chosen method) use the telephone.",
+                  "options": {
+                    "phone": "By phone",
+                    "email": "By email"
+                  },
+                  "errors": {
+                    "required": "This field is required"
+                  }
+                }
+              },
+              "legalAddress": {
+                "label": " Address for correspondence (official correspondence)",
+                "placeholder": "Enter a mailing address",
+                "errors": {
+                  "required": "This field is required"
+                }
+              }
+            },
+            "errors": {
+              "invalidUkLanguage": "Enter Ukrainian characters",
+              "invalidEnLanguage": "Enter Latin characters"
+            },
+            "actions": {
+              "submit": "Continue"
+            }
+          }
+        },
+        "damagedProperty": {
+          "title": "Damaged Property Information",
+          "form": {
+            "fields": {
+              "residence": {
+                "label": "Settlement",
+                "placeholder": "Enter the settlement name",
+                "errors": {
+                  "required": "This field is required"
+                }
+              },
+              "address": {
+                "label": "Address",
+                "placeholder": "Enter address",
+                "errors": {
+                  "required": "This field is required",
+                  "minLength": "Minimum {minLength} characters"
+                }
+              },
+              "buildingNumber": {
+                "label": "House number",
+                "placeholder": "Enter house number",
+                "errors": {
+                  "required": "This field is required",
+                  "invalid": "Enter a valid house number"
+                }
+              },
+              "apartmentNumber": {
+                "label": "Apartment number (optional)",
+                "placeholder": "Enter apartment number",
+                "errors": {
+                  "invalid": "Enter a valid apartment number"
+                }
+              },
+              "future": {
+                "label": "Questions about your views on your future (including the future of the property in application) (select one or more options that best reflect your situation)",
+                "description": "This question will help, at the point of financial compensation, to choose the best option for you, and for us to prioritize other options <br></br> <important>This does not mean that you cannot change your decision later</important >",
+                "options": {
+                  "going-to-restore-living-here": "Planning to restore property (I currently live in it)",
+                  "going-to-restore-will-be-living-here": "Planning to restore property (I plan to live here permanently, but I don't live here now)",
+                  "going-to-live-in-other-place-same-region": "Planning to live in another place within the region where the property is located",
+                  "going-to-live-in-other-region": "I plan to live in another region",
+                  "going-to-live-in-other-country": "I plan to go abroad and live there",
+                  "going-to-transfer-property": "I plan to transfer property to another person (including deed of gift, sale, inheritance, etc.)",
+                  "dont-know": "Don't know, can't answer"
+                },
+                "errors": {
+                  "required": "Choose at least one of the options"
+                }
+              },
+              "selfAssessment": {
+                "description": "You will need to self-assess the damaged property <br></br> This is not a final assessment, but only an auxiliary one to help us better understand the situation",
+                "physicalDamage": {
+                  "description": "Assess the physical damage to the property on a scale from 0 to 5, where 0 - no damage, 5 - very damaged <br></br> If you find it difficult to assess, put 0",
+                  "externalWalls": {
+                    "label": "External walls",
+                    "errors": {
+                      "min": "Minimum value: 0",
+                      "max": "Maximum value: 5",
+                      "required": "This field is required"
+                    }
+                  },
+                  "roof": {
+                    "label": "Roof",
+                    "errors": {
+                      "min": "Minimum value: 0",
+                      "max": "Maximum value: 5",
+                      "required": "This field is required"
+                    }
+                  },
+                  "windows": {
+                    "label": "Windows",
+                    "errors": {
+                      "min": "Minimum value: 0",
+                      "max": "Maximum value: 5",
+                      "required": "This field is required"
+                    }
+                  },
+                  "internalWalls": {
+                    "label": "Internal walls",
+                    "errors": {
+                      "min": "Minimum value: 0",
+                      "max": "Maximum value: 5",
+                      "required": "This field is required"
+                    }
+                  },
+                  "engineeringSystems": {
+                    "label": "Engineering systems (heating, water supply, sewage, etc.)",
+                    "errors": {
+                      "min": "Minimum value: 0",
+                      "max": "Maximum value: 5",
+                      "required": "This field is required"
+                    }
+                  }
+                },
+                "safety": {
+                  "description": "Assess the safety level of the property by marking field <br></br> If you find it difficult to assess, do not mark field",
+                  "explosives": {
+                    "label": "Explosive materials (rockets, ammunition, etc.)"
+                  },
+                  "debris": {
+                    "label": "Debris (from rockets, shells, etc.)"
+                  }
+                },
+                "livingConditions": {
+                  "description": "Assess the habitability and repairability of the property on a scale from 0 to 5, where 0 - suitable, 5 - not suitable <br></br> If you find it difficult to assess, put 0",
+                  "habitability": {
+                    "label": "Habitability",
+                    "errors": {
+                      "min": "Minimum value: 0",
+                      "max": "Maximum value: 5",
+                      "required": "This field is required"
+                    }
+                  },
+                  "repairability": {
+                    "label": "Repairability (restoration)",
+                    "errors": {
+                      "min": "Minimum value: 0",
+                      "max": "Maximum value: 5",
+                      "required": "This field is required"
+                    }
+                  }
+                },
+                "descriptionOfDamage": {
+                  "label": "Description of damage (optional)",
+                  "placeholder": "Enter a description of the damage",
+                  "description": "This field is not mandatory, but it will help us better understand the situation, as you know best what happened to the property <br></br> Use Ukrainian or English languages. We don't care about spelling, grammar, style, etc."
+                }
+              }
+            },
+            "actions": {
+              "back": "Back",
+              "submit": "Continue"
+            }
+          }
+        },
+        "docs": {
+          "title": "Submitting Documents",
+          "alert-no-save": {
+            "title": " This step is not saved to draft",
+            "description": " Documents will not be saved as the draft - if you leave the page, you will need to add documents again. <br></br> Documents will be uploaded at the Confirmation (final) step"
+          },
+          "form": {
+            "fields": {
+              "id": {
+                "label": "Identification documents",
+                "description": "Attach scanned copies (or photos) of your documents that confirm your identity. <br></br> <br></br> Your given names and surnames and date of birth must be indicated on the document. <br></br> For example, passport, ID card, driver's license, residence permit, travel passport, etc.",
+                "errors": {
+                  "required": "This field is required"
+                }
+              },
+              "propertyId": {
+                "label": "Property documents",
+                "description": "Attach scanned copies (or photos) of documents that prove your ownership of the property. <br></br> <br></br> The document must include the address of your property, your given names and surnames, and the share you own. <br></br> For example, a contact of sale, a will, a deed of gift, an extract from the real estate register, etc.",
+                "errors": {
+                  "required": "This field is required"
+                }
+              },
+              "evidenceOfDamagedProperty": {
+                "label": " Evidence of destroyed property (optional)",
+                "description": "Add photos (or scanned copies of documents) that confirm the damage to your property. <br></br> <br></br> Photos must be clear and show specific damage: preferably with different perspectives, zoom (closer, further) and fields of view (higher, lower) <br></br> If you add the testimony of people, more specifics are needed: where they live, when they saw the destruction, what kind of destruction, etc. <br> </br> <br></br> For example, photos, videos, reports on property inspection, documents on compensation for damages, testimonies of people, etc."
+              }
+            },
+            "actions": {
+              "back": "Back",
+              "submit": "Continue"
+            }
+          }
+        },
+        "confirmation": {
+          "title": "Confirmation",
+          "validation": {
+            "personal": "Check the correctness of the personal data",
+            "damagedProperty": "Check the correctness of the information about the damaged property",
+            "docs": "Check the correctness of the attached documents or add missing ones"
+          },
+          "sections": {
+            "personal": {
+              "title": "Title",
+              "names": "Surnames, given names (including patronymic or middle names)",
+              "namesUk": "In Ukrainian",
+              "namesEn": "In Latin",
+              "dob": "Date of Birth",
+              "legalAddress": "Mailing Address",
+              "phone": "Phone",
+              "email": "Email",
+              "contactSelected": "selected communication method"
+            },
+            "damagedProperty": {
+              "address": "Address",
+              "building": "building",
+              "apartment": "apart.",
+              "selfAssessment": "Self-assessment of the damaged property",
+              "descriptionOfDamage": "Description of damage",
+              "physicalDamage": "Physical damage (0 - no damage, 5 - very damaged)",
+              "safety": "Safety level (✓ if yes)",
+              "livingConditions": "Living conditions and repairability (0 - not suitable, 5 - very suitable)",
+              "future": "Questions about your views on your future (including the future of the property in application)"
+            },
+            "docs": {
+              "id": "Identification documents",
+              "propertyId": "Property documents",
+              "evidenceOfDamagedProperty": "Evidence of destroyed property"
+            }
+          },
+          "form": {
+            "fields": {
+              "agreementToCollectAndProcessPersonalData": {
+                "label": "Consent to the collection and processing of personal data",
+                "errors": {
+                  "required": "This field is required"
+                }
+              },
+              "signature": {
+                "label": "Signature",
+                "placeholder": "Connor I. Martinez",
+                "description": "Put your signature, for example: surnames and given names in English <br></br> <important>The signature confirms that you are familiar with all the specified data and agree that they are true</important>",
+                "errors": {
+                  "required": "This field is required"
+                }
+              }
+            },
+            "actions": {
+              "back": "Back",
+              "submit": "Confirm, sign and submit"
+            }
+          },
+          "submitting": {
+            "preUploadS3": {
+              "loading": "Preparing documents for upload",
+              "success": "Documents prepared for upload",
+              "error": "Document preparation error"
+            },
+            "uploadS3": {
+              "loading": "Uploading documents",
+              "success": "Documents successfully uploaded",
+              "error": "Document upload error"
+            },
+            "submit": {
+              "loading": "Submitting application to the registry",
+              "success": "Application successfully registered",
+              "error": "Application registration error"
+            },
+            "successCard": {
+              "title": "Application successfully created",
+              "description": "Write down the application number <br></br> You can check the status of the application by entering the number on the main page <br></br><br></br>",
+              "willBeDone": "The application should be completed by",
+              "executor": "Executor"
+            }
+          }
+        }
+      }
+    },
+    "admin": {
+      "common": {
+        "loading": "Loading",
+        "navigation": {
+          "moderation-f0": "Application moderation for registry entry"
+        },
+        "layout": {
+          "openNavigationMenu": "Open navigation menu",
+          "openUserMenu": "Open user menu",
+          "logout": "Logout"
+        }
+      },
+      "auth": {
+        "login": {
+          "form": {
+            "title": "Admin Authorization",
+            "description": "Enter your admin login details",
+            "fields": {
+              "username": {
+                "label": "Username",
+                "placeholder": "Enter username",
+                "errors": {
+                  "required": "This field is required"
+                }
+              },
+              "password": {
+                "label": "Password",
+                "placeholder": "Enter password",
+                "errors": {
+                  "required": "This field is required"
+                }
+              }
+            },
+            "actions": {
+              "submit": "Login",
+              "loading": "Logging in"
+            },
+            "errors": {
+              "invalidCredentials": "Invalid username or password"
+            }
+          }
+        }
+      },
+      "moderation-f0": {
+        "document-to-moderate": {
+          "form": {
+            "fields": {
+              "status": {
+                "options": {
+                  "approve": "Approve",
+                  "reject": "Reject"
+                },
+                "errors": {
+                  "mustBe": "Status must be one of the specified",
+                  "required": "Status is required"
+                }
+              },
+              "comment": {
+                "label": "Comment",
+                "placeholder": "Enter comment",
+                "errors": {
+                  "required": "Comment is required"
+                }
+              },
+              "keysWithDesc": {
+                "label": "Document description",
+                "description": "Enter document description for",
+                "placeholder": "Enter document description",
+                "errors": {
+                  "required": "Document description is required"
+                }
+              }
+            }
+          },
+          "uploading": {
+            "approveOrReject": {
+              "loading": "Sending reviewed data...",
+              "success": "Application successfully reviewed",
+              "error": "Error sending reviewed data"
+            },
+            "fetchNext": {
+              "loading": "Loading next application...",
+              "success": "Next application successfully loaded",
+              "error": "Error loading next application"
+            }
+          },
+          "sections": {
+            "descDocs": {
+              "title": "Document description"
+            },
+            "additionalComments": {
+              "title": "Additional comments"
+            }
+          },
+          "leftToCheck": "Left to check",
+          "infoFromForm": "Information from the application"
+        },
+        "no-document-to-moderation": {
+          "title": "That's all. All applications have been reviewed",
+          "description": "Click the button below to check if new applications have appeared",
+          "buttonRefresh": "Refresh"
+        }
+      }
+    }
+  }
+}

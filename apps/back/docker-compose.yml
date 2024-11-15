@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:13.11-alpine
+    restart: always
+    environment:
+      - POSTGRES_DB=${MIKRO_ORM_DB_NAME}
+      - POSTGRES_USER=${MIKRO_ORM_USER}
+      - POSTGRES_PASSWORD=${MIKRO_ORM_PASSWORD}
+    ports:
+      - '5432:5432'
+    volumes:
+      - db:/var/lib/postgresql/data
+    networks:
+      - db
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@example.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    ports:
+      - '5050:80'
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    networks:
+      - db
+
+volumes:
+  db:
+  pgadmin:
+
+networks:
+  db:
