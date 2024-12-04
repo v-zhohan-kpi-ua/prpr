@@ -89,6 +89,7 @@ export class F0PropertiesOutputDto {
           },
         },
         formula: {
+          resultRounded: form.property.selfAssessment.formula.resultRounded,
           result: form.property.selfAssessment.formula.result,
           howItWasCalculated:
             form.property.selfAssessment.formula.howItWasCalculated,
