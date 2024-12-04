@@ -8,6 +8,8 @@
 
 **Tech Stack**: TypeScript, Node.js (Nest.js), React (Next.js 13+), Postgres, Turborepo, S3 (AWS).
 
+**Tags**: information and records systems, data transparency, optimisation of bureaucracy and costs, automation of public services, recovery management, citizen engagement.
+
 ### What was done
 
 **Functional features**: registration and submission of damage applications, real-time tracking of application and case status, admin features for review and approval of applications, integration with S3 storage for document uploads (automatic generation of signed URLs for secure file transfer) user-friendly interface for public and administrative use, etc.
